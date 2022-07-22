@@ -18,7 +18,9 @@ const AddUsers = (props) => {
       return console.error("invalid your age");
     }
 
-    console.log(enteredUsername, enteredAge);
+    props.onAddUser(enteredUsername, enteredAge);
+    // console.log(enteredUsername, enteredAge);
+
     setEnteredUsername("");
     setEnteredAge("");
   };
