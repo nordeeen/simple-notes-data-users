@@ -64,6 +64,7 @@ const AddUsers = (props) => {
           <input
             id="username"
             type="text"
+            placeholder="input your name"
             value={enteredUsername}
             onChange={addUsernameChangeHandler}
           />
